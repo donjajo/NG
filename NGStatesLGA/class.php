@@ -5,7 +5,7 @@
  * @version 1.0
 */
 
-require( 'shit.php' );
+require( 'data.php' );
 
 define( 'PHP_ARRAY', 'PHP_ARRAY' );
 define( 'JSON', 'JSON' );
@@ -69,6 +69,3 @@ class NGStatesLGA {
 		}
 	}
 }
-
-$states = new NGStatesLGA();
-echo $states->getCapitalState( '' );
