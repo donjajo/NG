@@ -11,7 +11,7 @@ Do not mind as the code samples may look like as i am not so good in gitting, i 
 
 -- require "nsl.php";
 
--- $nsl = new NSL('nsl_data') ; // pass as argument path/to/nsl_data file without extention, only json format supported for now
+-- $nsl = new NSL('nsl_data') ; // pass as argument path/to/nsl_data file without extention, only json format supported for now. if no argument passed, the default data file name is nsl_data
 
  
  Getting Results
