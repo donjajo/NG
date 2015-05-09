@@ -1,1 +1,67 @@
-# NGStatesLGA
+I got the inspiration of updating and sharing this PHP Class after a good Don Jajo of mine did.... I thought i should at least spare some time as he did to FORK the repo via https://github.com/donjajo/NGStatesLGA so i can contribute to the PHP Class as someone wished if the methods can be at least Chain-able. And now, its not only Chain-able but i added and modify some methods...
+
+ 
+
+ 
+User Guide
+
+Do not mind as the code samples may look like as i am not so good in gitting, i used another editor
+
+ 
+
+-- require "nsl.php";
+
+-- $nsl = new NSL('nsl_data') ; // pass as argument path/to/nsl_data file without extention, only json format supported for now
+
+ 
+ Getting Results
+
+To get raw result as it is fetched from the nsl_data file to do your manipulation yourself, use
+
+-- $result = $nsl->get();
+
+
+To get all the states
+
+-- $result = $nsl->state()->get(); // returns array of states
+
+
+To get states and their capital 
+
+-- $result = $nsl->stateAndCapital()->get();
+
+ 
+
+To get local gov under a state
+
+-- $result = $nsl->stateLga('state_name')->get();
+
+ 
+
+check in the code to see comment on every method for the function they perform
+
+
+Counting Results
+
+To count the number of result, chain the countResult() before the get() method, do like below
+
+-- $result_num = $nsl->stateLga('state_name')->countResult()->get();
+
+ 
+Formatting Output
+
+Output can be formatted in JSON and CSV(comma seperated values) . the standard output format is ARRAY.. ARRAY Object will be added in the update to come
+
+example formatting;
+
+-- $result = $nsl->stateLga('state_name')->stdout('json')->get();
+
+ 
+
+NB:  only normal array and one level up associate array result can be output via the csv stdout format e.g array('mike', 'gattel'); and array(array('mike' => 'gattel'), array())
+
+
+
+ 
+
+
