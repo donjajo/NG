@@ -21,7 +21,7 @@ class NSL {
 	private $nsl_data,
 			$result;
 
-	function __construct( $file_name = 'nsl') { // output array when set to true
+	function __construct( $file_name = 'nsl_data') { // output array when set to true
 		$data_file = $file_name.'.json';
 		$df_content = file_get_contents($data_file);
 		//check for file existense
