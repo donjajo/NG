@@ -8,7 +8,7 @@
 ## User Guide 
 
 ``` php
-require "nsl.php";
+require "NSL.php";
 ```
 
 
