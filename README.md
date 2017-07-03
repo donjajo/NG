@@ -3,62 +3,69 @@ I got the inspiration of updating and sharing this PHP Class after a good Don Ja
  
 
  
-User Guide
+## User Guide 
 
-Do not mind as the code samples may look like as i am not so good in gitting, i used another editor
+``` php
+require "nsl.php";
+```
+
+
+``` php
+$nsl = new NSL('nsl_data') ; // pass as argument path/to/nsl_data file without extention, only json format supported for now. if no argument passed, the default data file name is nsl_data
+```
 
  
-
--- require "nsl.php";
-
--- $nsl = new NSL('nsl_data') ; // pass as argument path/to/nsl_data file without extention, only json format supported for now. if no argument passed, the default data file name is nsl_data
-
- 
- Getting Results
+ ### Getting Results
 
 To get raw result as it is fetched from the nsl_data file to do your manipulation yourself, use
 
--- $result = $nsl->get();
+``` php
+$result = $nsl->get();
+```
+
+#### `To get all the states`
 
 
-To get all the states
+``` php
+$result = $nsl->state()->get(); // returns array of states
+```
 
--- $result = $nsl->state()->get(); // returns array of states
+
+#### `To get states and their capital`
+
+``` php
+$result = $nsl->stateAndCapital()->get();
+```
+
+#### `To get local gov under a state`
 
 
-To get states and their capital 
-
--- $result = $nsl->stateAndCapital()->get();
-
- 
-
-To get local gov under a state
-
--- $result = $nsl->stateLga('state_name')->get();
-
- 
+``` php
+$result = $nsl->stateLga('state_name')->get();
+```
 
 check in the code to see comment on every method for the function they perform
 
 
-Counting Results
+#### `Counting Results`
 
 To count the number of result, chain the countResult() before the get() method, do like below
 
--- $result_num = $nsl->stateLga('state_name')->countResult()->get();
+``` php
+$result_num = $nsl->stateLga('state_name')->countResult()->get();
+```
 
- 
-Formatting Output
+#### Formatting Output
 
 Output can be formatted in JSON and CSV(comma seperated values) . the standard output format is ARRAY.. ARRAY Object will be added in the update to come
 
-example formatting;
+###### example formatting;
 
--- $result = $nsl->stateLga('state_name')->stdout('json')->get();
+``` php
+$result = $nsl->stateLga('state_name')->stdout('json')->get();
+```
 
- 
-
-NB:  only normal array and one level up associate array result can be output via the csv stdout format e.g array('mike', 'gattel'); and array(array('mike' => 'gattel'), array())
+**NB**:  only normal array and one level up associate array result can be output via the csv stdout format e.g `array('mike', 'gattel');` and `array(array('mike' => 'gattel'), array())`
 
 
 
