@@ -1,4 +1,6 @@
-I got the inspiration of updating and sharing this PHP Class after a good Don Jajo of mine did.... I thought i should at least spare some time as he did to FORK the repo via https://github.com/donjajo/NGStatesLGA so i can contribute to the PHP Class as someone wished if the methods can be at least Chain-able. And now, its not only Chain-able but i added and modify some methods...
+## nigeria-states-lga
+
+*I got the inspiration of updating and sharing this PHP Class after a good Don Jajo of mine did.... I thought i should at least spare some time as he did to FORK the repo via [donjajo/NGStatesLGA](https://github.com/donjajo/NGStatesLGA) so i can contribute to the PHP Class as someone wished if the methods can be at least Chain-able. And now, its not only Chain-able but i added and modify some methods...*
 
  
 
