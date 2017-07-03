@@ -6,7 +6,7 @@
  * Updated, Aiming towards method chaining(major)
  * 
  * @author Don Jajo <donjajo4all@gmail.com> {@link http://donjajo.com}
- * @author Michael Akanji <promatmot@gmail.com> {@link http://teclodge.blogspot.com}
+ * @author Michael Akanji <promatmot@gmail.com> {@link http://michaelakanji.com}
  * 
  * @version 3.0
  * 
