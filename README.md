@@ -1,4 +1,4 @@
-# NGStatesLGA
+# NG
 PHP Class containing Nigeria's Data 
 
 ### Usage 
@@ -40,3 +40,6 @@ $ng->getStateBy( 'lga', 'Ohafia' );
 ```
 ## Contributing
 I would love to extend this class to a database of Nigerian data, I had to start somewhere. Any form of contribution is welcomed!
+
+## Finally
+Much love from Naija!!! 🇳🇬 🇳🇬
